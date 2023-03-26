@@ -1,21 +1,18 @@
-<template>
-  <div class="container">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <Footer />
-    <router-view />
-  </div>
+<template class="background-color">
+  <Header />
+  <Footer />
+  <router-view />
 </template>
 
 <script>
 import "@/assets/css/app.css";
+import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
+    Header,
     Footer,
   },
 };
