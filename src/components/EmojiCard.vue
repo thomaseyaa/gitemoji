@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row d-flex justify-content-between">
       <div
-        v-for="item in data"
+        v-for="item in items"
         :key="item.name"
         class="card d-flex justify-content-between py-5 align-items-center text-center mb-3"
       >
@@ -16,15 +16,24 @@
 </template>
 
 <script>
-import data from "@/assets/json/emojis.json";
+import { mapActions } from "vuex";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "EmojiCard",
   data() {
     return {
-      data,
+      items: [],
     };
+  },
+  methods: {
+    ...mapActions(["getData"]),
+    async getEmojis() {
+      this.items = await this.getData();
+    },
+  },
+  mounted() {
+    this.getEmojis();
   },
 };
 </script>
