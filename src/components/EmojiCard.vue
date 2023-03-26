@@ -30,13 +30,20 @@ export default {
     return {
       items: [],
       currentPage: 0,
+      searchTerm: "",
     };
   },
   methods: {
     ...mapActions(["getData"]),
+    ...mapActions(["searchData"]),
 
     async getEmojis() {
       const items = await this.getData();
+      this.items = this.paginate(items);
+    },
+
+    async searchEmoji() {
+      const items = await this.searchData(this.searchTerm);
       this.items = this.paginate(items);
     },
 
@@ -51,12 +58,12 @@ export default {
         pages.push(items.slice(start, end));
       }
 
-      console.log(pages);
       return pages;
     },
   },
   mounted() {
     this.getEmojis();
+    this.searchEmoji();
   },
 };
 </script>
