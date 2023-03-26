@@ -2,8 +2,7 @@
 /*!
  * Customized Bootstrap v5.3.0-alpha2 (https://getbootstrap.com/)
  */
-:root,
-[data-bs-theme=light] {
+[data-bs-theme=light] {-ms-perspective-origin-x: ;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -121,12 +120,13 @@
   --bs-form-invalid-border-color: #dc3545;
 }
 
+:root,
 [data-bs-theme=dark] {
   color-scheme: dark;
-  --bs-body-color: #adb5bd;
+  --bs-body-color: #fff;
   --bs-body-color-rgb: 173, 181, 189;
-  --bs-body-bg: #212529;
-  --bs-body-bg-rgb: 33, 37, 41;
+  --bs-body-bg: #1c2942;
+  --bs-body-bg-rgb: 28, 41, 66;
   --bs-emphasis-color: #fff;
   --bs-emphasis-color-rgb: 255, 255, 255;
   --bs-secondary-color: rgba(173, 181, 189, 0.75);
@@ -172,6 +172,12 @@
   --bs-form-valid-border-color: #75b798;
   --bs-form-invalid-color: #ea868f;
   --bs-form-invalid-border-color: #ea868f;
+  --bs-font-sans-serif: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
 }
 
 *,
@@ -3936,7 +3942,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-font-size: 3.25rem;
   --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-nav-link-padding-x: 0.5rem;
