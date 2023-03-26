@@ -1,5 +1,5 @@
 <template>
-  <footer class="fixed-bottom bg-dark text-light mb-5">
+  <footer class="fixed-bottom bg-dark text-light pi-4">
     <navbar class="container d-flex justify-content-between">
       <div class="d-flex justify-content-center align-items-start">
         <p>© 2023 GitEmoji</p>
@@ -33,9 +33,6 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Footer",
-  props: {
-    msg: String,
-  },
 };
 </script>
 
