@@ -1,12 +1,17 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <EmojiCard />
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import EmojiCard from "@/components/EmojiCard.vue";
 
 export default {
   name: "HomeView",
+  components: {
+    EmojiCard,
+  },
   data() {
     return {};
   },
