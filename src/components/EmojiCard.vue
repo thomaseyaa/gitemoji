@@ -1,15 +1,20 @@
 <template>
   <div class="container">
-    <div class="row d-flex justify-content-between">
+    <div v-for="(page, index) in items" :key="index">
       <div
-        v-for="item in items"
-        :key="item.name"
-        class="card d-flex justify-content-between py-5 align-items-center text-center mb-3"
+        v-if="index == currentPage"
+        class="row d-flex justify-content-between"
       >
-        <span class="dot"></span>
-        <span style="font-size: 110px">{{ item.emoji }}</span>
-        <span style="font-size: 30px">{{ item.shortcode }}</span>
-        <span style="font-size: 20px">{{ item.description }}</span>
+        <div
+          v-for="item in page"
+          :key="item.name"
+          class="card py-5 align-items-center text-center mb-3"
+        >
+          <span class="dot"></span>
+          <span style="font-size: 110px">{{ item.emoji }}</span>
+          <span style="font-size: 30px">{{ item.shortcode }}</span>
+          <span style="font-size: 20px">{{ item.description }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -24,12 +29,30 @@ export default {
   data() {
     return {
       items: [],
+      currentPage: 0,
     };
   },
   methods: {
     ...mapActions(["getData"]),
+
     async getEmojis() {
-      this.items = await this.getData();
+      const items = await this.getData();
+      this.items = this.paginate(items);
+    },
+
+    paginate(items) {
+      const pageSize = 16;
+      const pageCount = Math.ceil(items.length / pageSize);
+      const pages = [];
+
+      for (let i = 0; i < pageCount; i++) {
+        const start = i * pageSize;
+        const end = start + pageSize;
+        pages.push(items.slice(start, end));
+      }
+
+      console.log(pages);
+      return pages;
     },
   },
   mounted() {
