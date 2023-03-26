@@ -1,119 +1,119 @@
 [
-    {
-      "emoji": "🎨",
-      "description": "Improved code structure or format",
-      "shortcode": ":art:",
-      "name": "art"
-    },
-    {
-      "emoji": "⚡️",
-      "description": "Code optimization",
-      "shortcode": ":zap:",
-      "name": "zap"
-    },
-    {
-      "emoji": "❌",
-      "description": "Removed code or files",
-      "shortcode": ":x:",
-      "name": "x"
-    },
-    {
-      "emoji": "🛠",
-      "description": "Fixed a bug",
-      "shortcode": ":hammer_and_wrench:",
-      "name": "hammer_and_wrench"
-    },
-    {
-      "emoji": "🚑",
-      "description": "Fixed a critical bug",
-      "shortcode": ":ambulance:",
-      "name": "ambulance"
-    },
-    {
-      "emoji": "✨",
-      "description": "Introduced a new feature",
-      "shortcode": ":sparkles:",
-      "name": "sparkles"
-    },
-    {
-      "emoji": "📝",
-      "description": "Added or updated documentation",
-      "shortcode": ":memo:",
-      "name": "memo"
-    },
-    {
-      "emoji": "🚀",
-      "description": "Deployment",
-      "shortcode": ":rocket:",
-      "name": "rocket"
-    },
-    {
-      "emoji": "💄",
-      "description": "Added or updated CSS",
-      "shortcode": ":lipstick:",
-      "name": "lipstick"
-    },
-    {
-      "emoji": "🎉",
-      "description": "First commit",
-      "shortcode": ":tada:",
-      "name": "tada"
-    },
-    {
-      "emoji": "✅",
-      "description": "Added or updated tests",
-      "shortcode": ":white_check_mark:",
-      "name": "white_check_mark"
-    },
-    {
-      "emoji": "🔐",
-      "description": "Added or updated .env.example",
-      "shortcode": ":closed_lock_with_key:",
-      "name": "closed_lock_with_key"
-    },
-    {
-      "emoji": "🚨",
-      "description": "Fixed a compiler or linter warning",
-      "shortcode": ":rotating_light:",
-      "name": "rotating_light"
-    },
-    {
-      "emoji": "🚧",
-      "description": "Work in progress",
-      "shortcode": ":construction:",
-      "name": "construction"
-    },
-    {
-      "emoji": "🚜",
-      "description": "Fixed a CI build",
-      "shortcode": ":tractor:",
-      "name": "tractor"
-    },
-    {
-      "emoji": "⬇️",
-      "description": "Downgraded a dependency",
-      "shortcode": ":arrow_down:",
-      "name": "arrow_down"
-    },
-    {
-      "emoji": "⬆️",
-      "description": "Updated a dependency",
-      "shortcode": ":arrow_up:",
-      "name": "arrow_up"
-    },
-    {
-      "emoji": "👷",
-      "description": "Added or updated CI build system",
-      "shortcode": ":construction_worker:",
-      "name": "construction_worker"
-    },
-    {
-      "emoji": "♻️",
-      "description": "Refactored code",
-      "shortcode": ":recycle:",
-      "name": "recycle"
-    },
-    {
+  {
+    "emoji": "🎨",
+    "description": "Improved code structure or format",
+    "shortcode": ":art:",
+    "name": "art"
+  },
+  {
+    "emoji": "⚡️",
+    "description": "Code optimization",
+    "shortcode": ":zap:",
+    "name": "zap"
+  },
+  {
+    "emoji": "❌",
+    "description": "Removed code or files",
+    "shortcode": ":x:",
+    "name": "x"
+  },
+  {
+    "emoji": "🛠",
+    "description": "Fixed a bug",
+    "shortcode": ":hammer_and_wrench:",
+    "name": "hammer_and_wrench"
+  },
+  {
+    "emoji": "🚑",
+    "description": "Fixed a critical bug",
+    "shortcode": ":ambulance:",
+    "name": "ambulance"
+  },
+  {
+    "emoji": "✨",
+    "description": "Introduced a new feature",
+    "shortcode": ":sparkles:",
+    "name": "sparkles"
+  },
+  {
+    "emoji": "📝",
+    "description": "Added or updated documentation",
+    "shortcode": ":memo:",
+    "name": "memo"
+  },
+  {
+    "emoji": "🚀",
+    "description": "Deployment",
+    "shortcode": ":rocket:",
+    "name": "rocket"
+  },
+  {
+    "emoji": "💄",
+    "description": "Added or updated CSS",
+    "shortcode": ":lipstick:",
+    "name": "lipstick"
+  },
+  {
+    "emoji": "🎉",
+    "description": "First commit",
+    "shortcode": ":tada:",
+    "name": "tada"
+  },
+  {
+    "emoji": "✅",
+    "description": "Added or updated tests",
+    "shortcode": ":white_check_mark:",
+    "name": "white_check_mark"
+  },
+  {
+    "emoji": "🔐",
+    "description": "Added or updated .env.example",
+    "shortcode": ":closed_lock_with_key:",
+    "name": "closed_lock_with_key"
+  },
+  {
+    "emoji": "🚨",
+    "description": "Fixed a compiler or linter warning",
+    "shortcode": ":rotating_light:",
+    "name": "rotating_light"
+  },
+  {
+    "emoji": "🚧",
+    "description": "Work in progress",
+    "shortcode": ":construction:",
+    "name": "construction"
+  },
+  {
+    "emoji": "🚜",
+    "description": "Fixed a CI build",
+    "shortcode": ":tractor:",
+    "name": "tractor"
+  },
+  {
+    "emoji": "⬇️",
+    "description": "Downgraded a dependency",
+    "shortcode": ":arrow_down:",
+    "name": "arrow_down"
+  },
+  {
+    "emoji": "⬆️",
+    "description": "Updated a dependency",
+    "shortcode": ":arrow_up:",
+    "name": "arrow_up"
+  },
+  {
+    "emoji": "👷",
+    "description": "Added or updated CI build system",
+    "shortcode": ":construction_worker:",
+    "name": "construction_worker"
+  },
+  {
+    "emoji": "♻️",
+    "description": "Refactored code",
+    "shortcode": ":recycle:",
+    "name": "recycle"
+  },
+  {
     "emoji": "🔧",
     "description": "Adding or updating configuration files",
     "shortcode": ":wrench:",
