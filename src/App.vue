@@ -1,7 +1,7 @@
 <template class="background-color">
   <Header />
-  <Footer />
   <router-view />
+  <Footer />
 </template>
 
 <script>
