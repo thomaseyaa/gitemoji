@@ -1,0 +1,40 @@
+<template>
+  <div
+    class="card d-flex justify-content-between py-5 align-items-center text-center"
+  >
+    <span class="dot"></span>
+    <span style="font-size: 110px">{{ emoji.emoji }}</span>
+    <span style="font-size: 30px">{{ emoji.shortcode }}</span>
+    <span style="font-size: 20px">{{ emoji.description }}</span>
+  </div>
+</template>
+
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "EmojiCard",
+  props: {
+    emoji: Object,
+  },
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.card {
+  border-radius: 10px;
+  width: 17rem;
+  height: 21rem;
+  padding: 10px;
+  background-color: #253656;
+}
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 28px;
+  top: 28px;
+  border-radius: 15px;
+  background: #ffffff;
+}
+</style>
