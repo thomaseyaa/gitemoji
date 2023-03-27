@@ -37,7 +37,7 @@ export default {
       this.copied = true;
       setTimeout(() => {
         this.copied = false;
-      }, 100); // set the timeout to 2 seconds (adjust as needed)
+      }, 100); // set the timeout to 1 seconds (adjust as needed)
     },
   },
 };
