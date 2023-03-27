@@ -12081,5 +12081,46 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.toast {
+  -ms-flex-preferred-size: 350px;
+  flex-basis: 350px;
+  max-width: 350px;
+  border: 1px solid #e7eaf3;
+  box-shadow: 0px 6px 12px rgba(140, 152, 164, 0.075);
+  opacity: 0;
+  border-radius: 0.75rem;
+}
+
+.toast:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.toast.showing {
+  opacity: 1;
+}
+
+.toast.show {
+  display: block;
+  opacity: 1;
+}
+
+.toast.hide {
+  display: none;
+}
+
+.toast-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  color: #8c98a4;
+  border-top-left-radius: calc(0.75rem - 1px);
+  border-top-right-radius: calc(0.75rem - 1px);
+}
+
+.toast-body {
+  padding: 1rem;
+}
 
 /*# sourceMappingURL=bootstrap.css.map */
