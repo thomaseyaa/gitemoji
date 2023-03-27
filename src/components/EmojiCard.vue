@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container flex-wrap">
     <div v-for="(page, index) in items" :key="index">
       <div
         v-if="index == currentPage"
@@ -8,7 +8,7 @@
         <div
           v-for="item in page"
           :key="item.name"
-          class="card py-5 align-items-center text-center mb-3"
+          class="card py-5 text-center mb-3 col-3"
         >
           <span class="dot"></span>
           <span style="font-size: 110px">{{ item.emoji }}</span>
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -30,40 +30,22 @@ export default {
     return {
       items: [],
       currentPage: 0,
-      searchTerm: "",
+      receivedData: null,
     };
+  },
+  computed: {
+    ...mapGetters(["emojisData"]),
   },
   methods: {
     ...mapActions(["getData"]),
-    ...mapActions(["searchData"]),
 
     async getEmojis() {
-      const items = await this.getData();
-      this.items = this.paginate(items);
-    },
-
-    async searchEmoji() {
-      const items = await this.searchData(this.searchTerm);
-      this.items = this.paginate(items);
-    },
-
-    paginate(items) {
-      const pageSize = 16;
-      const pageCount = Math.ceil(items.length / pageSize);
-      const pages = [];
-
-      for (let i = 0; i < pageCount; i++) {
-        const start = i * pageSize;
-        const end = start + pageSize;
-        pages.push(items.slice(start, end));
-      }
-
-      return pages;
+      await this.getData();
+      this.items = this.emojisData;
     },
   },
   mounted() {
     this.getEmojis();
-    this.searchEmoji();
   },
 };
 </script>
