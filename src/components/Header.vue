@@ -30,11 +30,11 @@ export default {
     ...mapActions(["searchData"]),
     async searchEmoji() {
       await this.searchData(this.search);
+      this.$emit("emit", this.$store.state.emojisData);
     },
   },
   watch: {
     search: function () {
-      // La fonction sera exécutée chaque fois que le v-model change
       this.searchEmoji();
     },
   },

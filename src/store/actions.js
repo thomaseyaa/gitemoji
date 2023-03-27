@@ -13,7 +13,9 @@ export const getData = async () => {
 export const searchData = async ({}, value) => {
   const search = value.toLowerCase();
   const items = data.filter(
-    (emoji) => emoji.description.includes(search) || emoji.name.includes(search)
+    (emoji) =>
+      emoji.description.toLowerCase().includes(search) ||
+      emoji.name.toLowerCase().includes(search)
   );
   paginate(items).then((data) => {
     store.commit("emojisData", {

@@ -1,4 +1,5 @@
 <template>
+  <HeaderVue @emit="handleValue" />
   <div class="container flex-wrap">
     <div v-for="(page, index) in items" :key="index">
       <div
@@ -42,16 +43,19 @@
 <script>
 import EmojiCard from "@/components/EmojiCard.vue";
 import { mapActions, mapGetters } from "vuex";
+import HeaderVue from "@/components/Header.vue";
 
 export default {
   name: "HomeView",
   components: {
     EmojiCard,
+    HeaderVue,
   },
   data() {
     return {
       items: [],
       currentPage: 0,
+      emittedValue: "",
     };
   },
   computed: {
@@ -59,7 +63,9 @@ export default {
   },
   methods: {
     ...mapActions(["getData"]),
-
+    handleValue(value) {
+      this.items = value;
+    },
     async getEmojis() {
       await this.getData();
       this.items = this.emojisData;
