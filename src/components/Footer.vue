@@ -1,48 +1,46 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center py-4">
-    <nav class="container navbar">
-      <div class="d-flex align-items-start">
-        <p>
-          © 2023
-          <a href="/" class="text-light text-decoration-none">GitEmoji</a>
-        </p>
-        <span class="dot"></span>
-        <p>
-          Made with ❤️️ by
-          <a
-            class="text-light text-decoration-none"
-            href="https://github.com/thomaseyaa"
-            >Thomas</a
-          >
-          &
-          <a
-            class="text-light text-decoration-none"
-            href="https://github.com/lucasinho11"
-            >Lucas</a
-          >
-        </p>
-      </div>
-      <div class="d-flex align-items-start">
+  <nav class="navbar container mb-5">
+    <div class="text-center d-flex justify-content-center mobile">
+      <p>
+        © 2023
+        <a href="/" class="text-light text-decoration-none">GitEmoji</a>
+      </p>
+      <span class="dot d-none d-md-block"></span>
+      <p>
+        Made with ❤️️ by
         <a
-          href="https://github.com/thomaseyaa/gitemoji"
           class="text-light text-decoration-none"
-          >About</a
+          href="https://github.com/thomaseyaa"
+          >Thomas</a
         >
-        <span class="dot"></span>
+        &amp;
         <a
-          href="https://github.com/thomaseyaa/gitemoji"
           class="text-light text-decoration-none"
-          >Contributors</a
+          href="https://github.com/lucasinho11"
+          >Lucas</a
         >
-        <span class="dot"></span>
-        <a
-          href="https://github.com/thomaseyaa/gitemoji"
-          class="text-light text-decoration-none"
-          >GitHub</a
-        >
-      </div>
-    </nav>
-  </div>
+      </p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a
+        href="https://github.com/thomaseyaa/gitemoji"
+        class="text-light text-decoration-none"
+        >About</a
+      >
+      <span class="dot"></span>
+      <a
+        href="https://github.com/thomaseyaa/gitemoji"
+        class="text-light text-decoration-none"
+        >Contributors</a
+      >
+      <span class="dot"></span>
+      <a
+        href="https://github.com/thomaseyaa/gitemoji"
+        class="text-light text-decoration-none"
+        >GitHub</a
+      >
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -52,7 +50,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .dot {
   height: 3px;
@@ -61,5 +58,15 @@ export default {
   border-radius: 50%;
   display: inline-block;
   margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mobile {
+    flex-direction: column;
+  }
 }
 </style>
