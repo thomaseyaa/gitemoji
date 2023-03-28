@@ -1,30 +1,45 @@
 <template>
-  <navbar class="container d-flex justify-content-between py-4">
-    <div class="d-flex justify-content-center align-items-start">
-      <p>© 2023 GitEmoji</p>
-      <span class="dot"></span>
-      <p>Made with ❤️️ by Thomas & Lucas</p>
-    </div>
-    <div class="d-flex justify-content-center align-items-start">
-      <a
-        href="https://github.com/thomaseyaa/gitemoji"
-        class="text-light text-decoration-none"
-        >About</a
-      >
-      <span class="dot"></span>
-      <a
-        href="https://github.com/thomaseyaa/gitemoji"
-        class="text-light text-decoration-none"
-        >Contributors</a
-      >
-      <span class="dot"></span>
-      <a
-        href="https://github.com/thomaseyaa/gitemoji"
-        class="text-light text-decoration-none"
-        >GitHub</a
-      >
-    </div>
-  </navbar>
+  <div class="d-flex justify-content-center align-items-center py-4">
+    <nav class="container navbar">
+      <div class="d-flex align-items-start">
+        <p>© 2023 GitEmoji</p>
+        <span class="dot"></span>
+        <p>
+          Made with ❤️️ by
+          <a
+            class="text-light text-decoration-none"
+            href="https://github.com/thomaseyaa"
+            >Thomas</a
+          >
+          &
+          <a
+            class="text-light text-decoration-none"
+            href="https://github.com/lucasinho11"
+            >Lucas</a
+          >
+        </p>
+      </div>
+      <div class="d-flex align-items-start">
+        <a
+          href="https://github.com/thomaseyaa/gitemoji"
+          class="text-light text-decoration-none"
+          >About</a
+        >
+        <span class="dot"></span>
+        <a
+          href="https://github.com/thomaseyaa/gitemoji"
+          class="text-light text-decoration-none"
+          >Contributors</a
+        >
+        <span class="dot"></span>
+        <a
+          href="https://github.com/thomaseyaa/gitemoji"
+          class="text-light text-decoration-none"
+          >GitHub</a
+        >
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>

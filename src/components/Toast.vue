@@ -20,7 +20,7 @@ export default {
       const toast = useToast();
       toast.success(this.message, {
         position: "top-right",
-        timeout: 1000,
+        timeout: 1500,
         closeOnClick: true,
         pauseOnFocusLoss: true,
         pauseOnHover: true,

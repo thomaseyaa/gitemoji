@@ -1,6 +1,8 @@
 <template class="background-color">
-  <router-view />
-  <Footer />
+  <div class="px-4">
+    <router-view />
+    <Footer />
+  </div>
 </template>
 
 <script>
