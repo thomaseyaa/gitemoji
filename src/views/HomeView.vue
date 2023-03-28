@@ -21,14 +21,13 @@
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="page-item" @click="changePageWithNb(0)">
-          <a class="page-link text-white" href="#">1</a>
-        </li>
-        <li class="page-item" @click="changePageWithNb(1)">
-          <a class="page-link text-white" href="#">2</a>
-        </li>
-        <li class="page-item" @click="changePageWithNb(2)">
-          <a class="page-link text-white" href="#">3</a>
+        <li
+          class="page-item"
+          @click="changePageWithNb(index)"
+          v-for="(page, index) in items"
+          :key="index"
+        >
+          <a class="page-link text-white" href="#">{{ parseInt(index) + 1 }}</a>
         </li>
         <li class="page-item" @click="nextPage()">
           <a class="page-link text-white" href="#" aria-label="Next">
@@ -75,7 +74,7 @@ export default {
     },
     previousPage() {
       const totalLength = Object.keys(this.items).length;
-      if (this.currentPage < totalLength - 1 && this.currentPage > 0) {
+      if (this.currentPage < totalLength && this.currentPage > 0) {
         this.currentPage--;
       }
     },

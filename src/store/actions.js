@@ -26,7 +26,7 @@ export const searchData = async ({}, value) => {
 };
 
 export const paginate = async (items) => {
-  const pageSize = 16;
+  const pageSize = 12;
   const pageCount = Math.ceil(items.length / pageSize);
   const pages = [];
 
