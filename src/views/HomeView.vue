@@ -1,6 +1,6 @@
 <template>
   <HeaderVue @emit="handleValue" />
-  <div class="container py-5 flex-wrap">
+  <div class="container py-5 flex-wrap container-height">
     <div v-for="(page, index) in items" :key="index">
       <div
         v-if="index == currentPage"
@@ -14,7 +14,10 @@
         />
       </div>
     </div>
-    <div v-if="Object.keys(items).length == 0" class="text-center">
+    <div
+      v-if="Object.keys(items).length == 0"
+      class="text-center d-flex justify-content-center align-items-center result"
+    >
       <h2>No results</h2>
     </div>
     <nav
@@ -101,3 +104,19 @@ export default {
   },
 };
 </script>
+<style scoped>
+.result {
+  height: 65vh;
+}
+.container-height {
+  min-height: 70vh;
+}
+@media (max-width: 576px) {
+  .container-height {
+    min-height: 5vh;
+  }
+  .result {
+    height: 50vh;
+  }
+}
+</style>
