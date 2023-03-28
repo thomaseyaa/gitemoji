@@ -14,7 +14,13 @@
         />
       </div>
     </div>
-    <nav class="d-flex justify-content-center">
+    <div v-if="Object.keys(items).length == 0" class="text-center">
+      <h2>No results</h2>
+    </div>
+    <nav
+      class="d-flex justify-content-center"
+      v-if="Object.keys(items).length != 0"
+    >
       <ul class="pagination">
         <li class="page-item" @click="previousPage()">
           <a class="page-link text-white" href="#" aria-label="Previous">
