@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-center align-items-center py-4">
     <nav class="container navbar">
-      <a class="navbar-brand">GitEmoji</a>
+      <a href="/" class="navbar-brand">GitEmoji</a>
       <form class="mobile-form" role="search">
         <input
           class="form-control"
