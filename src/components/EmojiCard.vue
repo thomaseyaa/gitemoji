@@ -12,7 +12,6 @@
     <audio id="myAudio">
       <source src="../assets/sound.mp3" type="audio/mpeg" />
     </audio>
-
   </div>
 </template>
 
