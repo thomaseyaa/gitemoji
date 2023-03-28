@@ -4,16 +4,20 @@
     @click="copyText(item.shortcode)"
   >
     <Toast v-if="copied" :message="text" />
+
     <span class="dot"></span>
-    <span style="font-size: 5rem">{{ item.emoji }}</span>
-    <span style="font-size: 1.547rem">{{ item.shortcode }}</span>
-    <span style="font-size: 1.031rem">{{ item.description }}</span>
+    <span style="font-size: 110px">{{ item.emoji }}</span>
+    <span style="font-size: 30px">{{ item.shortcode }}</span>
+    <span style="font-size: 20px">{{ item.description }}</span>
+    <audio id="myAudio">
+      <source src="../assets/sound.mp3" type="audio/mpeg" />
+    </audio>
+
   </div>
 </template>
 
 <script>
 import Toast from "@/components/Toast.vue";
-
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "EmojiCard",
@@ -32,8 +36,10 @@ export default {
   },
   methods: {
     copyText(item) {
+      var audio = document.getElementById("myAudio");
       this.copied = false;
       navigator.clipboard.writeText(item);
+      audio.play();
       this.copied = true;
       setTimeout(() => {
         this.copied = false;
