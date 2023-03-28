@@ -1,6 +1,6 @@
 <template>
   <div
-    class="card py-5 text-center mb-3 col-3"
+    class="card py-5 px-4 text-center col-3"
     @click="copyText(item.shortcode)"
   >
     <Toast v-if="copied" :message="text" />
@@ -12,6 +12,7 @@
     <audio id="myAudio">
       <source src="../assets/sound.mp3" type="audio/mpeg" />
     </audio>
+
   </div>
 </template>
 
@@ -52,11 +53,12 @@ export default {
 <style scoped>
 .card {
   border-radius: 10px;
-  width: 17rem;
-  height: 21rem;
+  width: 16.1rem;
+  height: 20rem;
   padding: 10px;
   background-color: #253656;
   cursor: pointer;
+  margin-bottom: 2.3rem;
 }
 .dot {
   position: absolute;
@@ -66,5 +68,10 @@ export default {
   top: 28px;
   border-radius: 15px;
   background: #ffffff;
+}
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <HeaderVue @emit="handleValue" />
-  <div class="container flex-wrap">
+  <div class="container py-5 flex-wrap">
     <div v-for="(page, index) in items" :key="index">
       <div
         v-if="index == currentPage"
@@ -14,7 +14,7 @@
         />
       </div>
     </div>
-    <nav class="d-flex justify-content-center mt-5">
+    <nav class="d-flex justify-content-center">
       <ul class="pagination">
         <li class="page-item" @click="previousPage()">
           <a class="page-link text-white" href="#" aria-label="Previous">
