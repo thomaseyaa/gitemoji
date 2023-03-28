@@ -6,6 +6,24 @@
     "name": "art"
   },
   {
+    "emoji": "🚨",
+    "description": "Fixed a compiler or linter warning",
+    "shortcode": ":rotating_light:",
+    "name": "rotating_light"
+  },
+  {
+    "emoji": "📝",
+    "description": "Added or updated documentation",
+    "shortcode": ":memo:",
+    "name": "memo"
+  },
+  {
+    "emoji": "🚀",
+    "description": "Deployment changes",
+    "shortcode": ":rocket:",
+    "name": "rocket"
+  },
+  {
     "emoji": "⚡️",
     "description": "Code optimization",
     "shortcode": ":zap:",
@@ -36,18 +54,6 @@
     "name": "sparkles"
   },
   {
-    "emoji": "📝",
-    "description": "Added or updated documentation",
-    "shortcode": ":memo:",
-    "name": "memo"
-  },
-  {
-    "emoji": "🚀",
-    "description": "Deployment",
-    "shortcode": ":rocket:",
-    "name": "rocket"
-  },
-  {
     "emoji": "💄",
     "description": "Added or updated CSS",
     "shortcode": ":lipstick:",
@@ -70,12 +76,6 @@
     "description": "Added or updated .env.example",
     "shortcode": ":closed_lock_with_key:",
     "name": "closed_lock_with_key"
-  },
-  {
-    "emoji": "🚨",
-    "description": "Fixed a compiler or linter warning",
-    "shortcode": ":rotating_light:",
-    "name": "rotating_light"
   },
   {
     "emoji": "🚧",
