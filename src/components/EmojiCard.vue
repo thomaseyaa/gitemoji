@@ -1,13 +1,13 @@
 <template>
   <div
-    class="card py-5 text-center mb-3 col-3"
+    class="card py-5 px-4 text-center col-3"
     @click="copyText(item.shortcode)"
   >
     <Toast v-if="copied" :message="text" />
     <span class="dot"></span>
-    <span style="font-size: 110px">{{ item.emoji }}</span>
-    <span style="font-size: 30px">{{ item.shortcode }}</span>
-    <span style="font-size: 20px">{{ item.description }}</span>
+    <span style="font-size: 5rem">{{ item.emoji }}</span>
+    <span style="font-size: 1.547rem">{{ item.shortcode }}</span>
+    <span style="font-size: 1.031rem">{{ item.description }}</span>
   </div>
 </template>
 
@@ -47,11 +47,12 @@ export default {
 <style scoped>
 .card {
   border-radius: 10px;
-  width: 17rem;
-  height: 21rem;
+  width: 16.1rem;
+  height: 20rem;
   padding: 10px;
   background-color: #253656;
   cursor: pointer;
+  margin-bottom: 2.3rem;
 }
 .dot {
   position: absolute;
@@ -61,5 +62,10 @@ export default {
   top: 28px;
   border-radius: 15px;
   background: #ffffff;
+}
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
 }
 </style>

@@ -1,18 +1,18 @@
 <template>
-  <nav class="navbar my-4">
-    <div class="container">
+  <div class="d-flex justify-content-center align-items-center py-4">
+    <nav class="container navbar">
       <a class="navbar-brand">GitEmoji</a>
-      <form role="search">
+      <form class="mobile-form" role="search">
         <input
-          class="form-control me-2"
+          class="form-control"
           type="search"
           v-model="search"
           placeholder="Search"
           aria-label="Search"
         />
       </form>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
 
 <script>
