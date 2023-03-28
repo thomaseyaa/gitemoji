@@ -1,14 +1,10 @@
 <template>
-  <div
-    class="card py-5 px-4 text-center col-3"
-    @click="copyText(item.shortcode)"
-  >
+  <div class="card py-5 px-4 text-center" @click="copyText(item.shortcode)">
     <Toast v-if="copied" :message="text" />
-
     <span class="dot"></span>
-    <span style="font-size: 110px">{{ item.emoji }}</span>
-    <span style="font-size: 30px">{{ item.shortcode }}</span>
-    <span style="font-size: 20px">{{ item.description }}</span>
+    <span class="emoji">{{ item.emoji }}</span>
+    <span class="shortcode">{{ item.shortcode }}</span>
+    <span class="description">{{ item.description }}</span>
     <audio id="myAudio">
       <source src="../assets/sound.mp3" type="audio/mpeg" />
     </audio>
@@ -68,9 +64,24 @@ export default {
   border-radius: 15px;
   background: #ffffff;
 }
+.emoji {
+  font-size: 5rem;
+}
+.shortcode {
+  font-size: 1.547rem;
+}
+.description {
+  font-size: 1.031rem;
+}
 @media (max-width: 576px) {
   .card {
     width: 100%;
+  }
+  .shortcode {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 20px;
   }
 }
 </style>
