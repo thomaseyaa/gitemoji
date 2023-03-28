@@ -4,7 +4,20 @@
       <div class="d-flex align-items-start">
         <p>© 2023 GitEmoji</p>
         <span class="dot"></span>
-        <p>Made with ❤️️ by Thomas & Lucas</p>
+        <p>
+          Made with ❤️️ by
+          <a
+            class="text-light text-decoration-none"
+            href="https://github.com/thomaseyaa"
+            >Thomas</a
+          >
+          &
+          <a
+            class="text-light text-decoration-none"
+            href="https://github.com/lucasinho11"
+            >Lucas</a
+          >
+        </p>
       </div>
       <div class="d-flex align-items-start">
         <a
