@@ -86,6 +86,11 @@ export default {
       }
     },
   },
+  watch: {
+    items() {
+      this.currentPage = 0;
+    },
+  },
   mounted() {
     this.getEmojis();
   },
