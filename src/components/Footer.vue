@@ -2,7 +2,10 @@
   <div class="d-flex justify-content-center align-items-center py-4">
     <nav class="container navbar">
       <div class="d-flex align-items-start">
-        <p>© 2023 GitEmoji</p>
+        <p>
+          © 2023
+          <a href="/" class="text-light text-decoration-none">GitEmoji</a>
+        </p>
         <span class="dot"></span>
         <p>
           Made with ❤️️ by
