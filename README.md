@@ -4,20 +4,20 @@
 
 ## About
 
-[GitEmoji](https://gitemoji.com) is guide to standardize and explain how to use **emojis on GitHub commit messages**.
+[GitEmoji](https://gitemoji.com) is a guide to standardize and explain how to use **emojis on GitHub commit messages**.
 
 **Using emojis** on **commit messages** provides an **easy way** of **identifying the purpose or intention of a commit** with only looking at the emojis used. As there are a lot of different emojis but also a lot of emojis guides, we found the need of creating a guide in our way that can help to use emojis easier.
 
 ## Example of usage
 
-In case you want integrate emojis in your project, here's an example of how to use it practical way to use it :
+In case you want integrate emojis in your project, here's an example of a practical way to use it :
 
 ```
 <message> :shortcode:
 ```
 
 - `message:` Brief commit message explaining your changes.
-- `scope`: String that will add the emoji chosen next to your message.
+- `shortcode:` String that will add the emoji chosen next to your message.
 
 ## Contributing to GitEmoji
 
