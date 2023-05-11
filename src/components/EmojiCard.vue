@@ -1,18 +1,13 @@
 <template>
-  <div class="col-md-3">
-    <div
-      class="card py-5 px-4 text-center justify-content-between"
-      @click="copyText(item.shortcode)"
-    >
-      <Toast v-if="copied" :message="text" />
-      <span class="dot"></span>
-      <span class="emoji">{{ item.emoji }}</span>
-      <span class="shortcode">{{ item.shortcode }}</span>
-      <span class="description">{{ item.description }}</span>
-      <audio id="myAudio">
-        <source src="../assets/sound.mp3" type="audio/mpeg" />
-      </audio>
-    </div>
+  <div class="card py-5 px-4 text-center" @click="copyText(item.shortcode)">
+    <Toast v-if="copied" :message="text" />
+    <span class="dot"></span>
+    <span class="emoji">{{ item.emoji }}</span>
+    <span class="shortcode">{{ item.shortcode }}</span>
+    <span class="description">{{ item.description }}</span>
+    <audio id="myAudio">
+      <source src="../assets/sound.mp3" type="audio/mpeg" />
+    </audio>
   </div>
 </template>
 
@@ -53,7 +48,7 @@ export default {
 <style scoped>
 .card {
   border-radius: 10px;
-  width: 100%;
+  width: 22.8%;
   height: 20rem;
   padding: 10px;
   background-color: #253656;
