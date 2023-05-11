@@ -1,17 +1,14 @@
 <template>
   <HeaderVue @emit="handleValue" />
-  <div class="container py-5 flex-wrap container-height">
+
+  <div class="container py-5 container-height">
     <div v-for="(page, index) in items" :key="index">
       <div
         v-if="index == currentPage"
-        class="row d-flex justify-content-between"
+        class="row"
+        style="margin-left: -24px; margin-right: -24px"
       >
-        <EmojiCard
-          :item="item"
-          v-for="item in page"
-          :key="item.name"
-          class="d-flex justify-content-between"
-        />
+        <EmojiCard :item="item" v-for="item in page" :key="item.name" />
       </div>
     </div>
     <div
