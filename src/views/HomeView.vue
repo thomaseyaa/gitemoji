@@ -4,13 +4,24 @@
     <div v-for="(page, index) in items" :key="index">
       <div
         v-if="index == currentPage"
-        class="row d-flex justify-content-between"
+        :class="[
+          'row',
+          Object.keys(items[index]).length % 4 !== 0
+            ? 'justify-content-start'
+            : 'justify-content-between',
+        ]"
       >
         <EmojiCard
           :item="item"
-          v-for="item in page"
+          v-for="(item, cardIndex) in page"
           :key="item.name"
           class="d-flex justify-content-between"
+          :style="[
+            Object.keys(items[index]).length % 4 !== 0 &&
+            (cardIndex + 1) % 4 !== 0
+              ? { marginRight: '2.05rem' }
+              : {},
+          ]"
         />
       </div>
     </div>
