@@ -11,32 +11,37 @@
         <a
           class="text-light text-decoration-none"
           href="https://github.com/thomaseyaa"
+          target="_blank"
           >Thomas</a
         >
         &amp;
         <a
           class="text-light text-decoration-none"
           href="https://github.com/lucasinho11"
+          target="_blank"
           >Lucas</a
         >
       </p>
     </div>
     <div class="d-flex justify-content-center">
       <a
-        href="https://github.com/thomaseyaa/gitemoji"
+        href="https://github.com/thomaseyaa/gitemoji#about"
         class="text-light text-decoration-none"
+        target="_blank"
         >About</a
       >
       <span class="dot"></span>
       <a
-        href="https://github.com/thomaseyaa/gitemoji"
+        href="https://github.com/thomaseyaa/gitemoji/graphs/contributors"
         class="text-light text-decoration-none"
+        target="_blank"
         >Contributors</a
       >
       <span class="dot"></span>
       <a
         href="https://github.com/thomaseyaa/gitemoji"
         class="text-light text-decoration-none"
+        target="_blank"
         >GitHub</a
       >
     </div>
