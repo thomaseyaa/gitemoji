@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "minify": "uglifycss src/assets/css/app.css --output src/assets/css/app.min.css"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "minify": "^10.2.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vue-toastification": "^2.0.0-rc.5",
