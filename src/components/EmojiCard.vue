@@ -32,6 +32,7 @@ export default {
   methods: {
     copyText(item) {
       var audio = document.getElementById("myAudio");
+      audio.currentTime = 0;
       this.copied = false;
       navigator.clipboard.writeText(item);
       audio.play();
