@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import "@/assets/css/app.css";
+import "@/assets/css/app.min.css";
 import Footer from "@/components/Footer.vue";
 
 export default {
