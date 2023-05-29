@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "minify": "uglifycss src/assets/css/app.css --output src/assets/css/app.min.css"
+    "mini": "uglifycss src/assets/css/app.min.css --output src/assets/css/app.min.css",
+    "demini": "prettier --write src/assets/css/app.min.css"
   },
   "dependencies": {
     "core-js": "^3.8.3",
