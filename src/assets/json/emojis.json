@@ -12,18 +12,6 @@
     "name": "rotating_light"
   },
   {
-    "emoji": "📝",
-    "description": "Added or updated documentation",
-    "shortcode": ":memo:",
-    "name": "memo"
-  },
-  {
-    "emoji": "🚀",
-    "description": "Deployment changes",
-    "shortcode": ":rocket:",
-    "name": "rocket"
-  },
-  {
     "emoji": "⚡️",
     "description": "Code optimization",
     "shortcode": ":zap:",
@@ -48,10 +36,28 @@
     "name": "ambulance"
   },
   {
-    "emoji": "✨",
+    "emoji": "🆕",
     "description": "Introduced a new feature",
+    "shortcode": ":new:",
+    "name": "new"
+  },
+  {
+    "emoji": "✨",
+    "description": "Updated a feature",
     "shortcode": ":sparkles:",
     "name": "sparkles"
+  },
+  {
+    "emoji": "📝",
+    "description": "Added or updated documentation",
+    "shortcode": ":memo:",
+    "name": "memo"
+  },
+  {
+    "emoji": "🚀",
+    "description": "Deployment",
+    "shortcode": ":rocket:",
+    "name": "rocket"
   },
   {
     "emoji": "💄",
@@ -78,16 +84,22 @@
     "name": "closed_lock_with_key"
   },
   {
+    "emoji": "🪄",
+    "description": "Fixed a compiler or linter warning",
+    "shortcode": ":magic_wand:",
+    "name": "magic_wand"
+  },
+  {
     "emoji": "🚧",
     "description": "Work in progress",
     "shortcode": ":construction:",
     "name": "construction"
   },
   {
-    "emoji": "🚜",
+    "emoji": "🚂",
     "description": "Fixed a CI build",
-    "shortcode": ":tractor:",
-    "name": "tractor"
+    "shortcode": ":steam_locomotive:",
+    "name": "steam_locomotive"
   },
   {
     "emoji": "⬇️",
@@ -114,44 +126,44 @@
     "name": "recycle"
   },
   {
-    "emoji": "🔧",
-    "description": "Adding or updating configuration files",
-    "shortcode": ":wrench:",
-    "name": "wrench"
+    "emoji": "⚙️",
+    "description": "Added or updated configuration files",
+    "shortcode": ":gear:",
+    "name": "gear"
   },
   {
-    "emoji": "🔨",
-    "description": "Adding or updating development scripts",
-    "shortcode": ":hammer:",
-    "name": "hammer"
+    "emoji": "🖋️",
+    "description": "Added or updated development scripts",
+    "shortcode": ":pencil:",
+    "name": "pencil"
   },
   {
     "emoji": "🌐",
-    "description": "Internationalization, localization, and translation",
+    "description": "Internationalization, localization, or translation",
     "shortcode": ":globe_with_meridians:",
     "name": "globe_with_meridians"
   },
   {
     "emoji": "✏️",
-    "description": "Fixing typos",
+    "description": "Fixed typos",
     "shortcode": ":pencil2:",
     "name": "pencil2"
   },
   {
     "emoji": "💩",
-    "description": "Writing dirty code that needs to be cleaned up",
+    "description": "Wrote bad code that needs improvement",
     "shortcode": ":poop:",
     "name": "poop"
   },
   {
     "emoji": "🔀",
-    "description": "Merging branches",
+    "description": "Merged branches",
     "shortcode": ":twisted_rightwards_arrows:",
     "name": "twisted_rightwards_arrows"
   },
   {
     "emoji": "📦",
-    "description": "Adding or updating a compiled file or package",
+    "description": "Added or updated compiled files or packages",
     "shortcode": ":package:",
     "name": "package"
   },
@@ -163,74 +175,146 @@
   },
   {
     "emoji": "⚰️",
-    "description": "Removing dead code",
+    "description": "Removed dead code",
     "shortcode": ":coffin:",
     "name": "coffin"
   },
   {
     "emoji": "🚚",
-    "description": "Moving or renaming resources (e.g. files, paths, routes)",
+    "description": "Moved or renamed resources (e.g., files, paths, routes)",
     "shortcode": ":truck:",
     "name": "truck"
   },
   {
     "emoji": "💥",
-    "description": "Introducing a major change",
+    "description": "Introduced a major change",
     "shortcode": ":boom:",
     "name": "boom"
   },
   {
-    "emoji": "🏞️",
-    "description": "Adding or updating assets",
+    "emoji": "🏞",
+    "description": "Added or updated assets",
     "shortcode": ":national_park:",
     "name": "national_park"
   },
   {
     "emoji": "💬",
-    "description": "Adding or updating comments in source code",
+    "description": "Added or updated comments in source code",
     "shortcode": ":speech_balloon:",
     "name": "speech_balloon"
   },
   {
-    "emoji": "🗃️",
+    "emoji": "🗃",
     "description": "Database-related changes",
     "shortcode": ":card_file_box:",
     "name": "card_file_box"
   },
   {
-    "emoji": "🏗️",
+    "emoji": "🏗",
     "description": "Architectural changes",
     "shortcode": ":building_construction:",
     "name": "building_construction"
   },
   {
+    "emoji": "🧱",
+    "description": "Added a new section of code",
+    "shortcode": ":bricks:",
+    "name": "bricks"
+  },
+  {
     "emoji": "🙈",
-    "description": "Adding or updating .gitignore file",
+    "description": "Added or updated .gitignore file",
     "shortcode": ":see_no_evil:",
     "name": "see_no_evil"
   },
   {
     "emoji": "🔍",
-    "description": "Improving search engine optimization (SEO)",
+    "description": "Improved SEO",
     "shortcode": ":mag:",
     "name": "mag"
   },
-    {
+  {
     "emoji": "🌱",
-    "description": "Add or update a seeder",
+    "description": "Added or updated seeders",
     "shortcode": ":seedling:",
     "name": "seedling"
   },
   {
     "emoji": "💫",
-    "description": "Add or update animations and transitions",
+    "description": "Added or updated animations and transitions",
     "shortcode": ":dizzy:",
     "name": "dizzy"
   },
   {
     "emoji": "🛂",
-    "description": "Work on code related to authorization, roles, or permissions",
+    "description": "Worked on code related to authorization, roles, or permissions",
     "shortcode": ":passport_control:",
     "name": "passport_control"
+  },
+  {
+    "emoji": "♿️",
+    "description": "Improved accessibility",
+    "shortcode": ":wheelchair:",
+    "name": "wheelchair"
+  },
+  {
+    "emoji": "📱",
+    "description": "Worked on responsive design",
+    "shortcode": ":iphone:",
+    "name": "iphone"
+  },
+  {
+    "emoji": "🥅",
+    "description": "Error handling",
+    "shortcode": ":goal_net:",
+    "name": "goal_net"
+  },
+  {
+    "emoji": "💸",
+    "description": "Added sponsorship or money-related infrastructure",
+    "shortcode": ":money_with_wings:",
+    "name": "money_with_wings"
+  },
+  {
+    "emoji": "🦺",
+    "description": "Added or updated code related to validation",
+    "shortcode": ":safety_vest:",
+    "name": "safety_vest"
+  },
+  {
+    "emoji": "🔖",
+    "description": "Released new version",
+    "shortcode": ":bookmark:",
+    "name": "bookmark"
+  },
+  {
+    "emoji": "📌",
+    "description": "Pinned dependencies to specific versions",
+    "shortcode": ":pushpin:",
+    "name": "pushpin"
+  },
+  {
+    "emoji": "🐳",
+    "description": "Work related to Docker",
+    "shortcode": ":whale:",
+    "name": "whale"
+  },
+  {
+    "emoji": "🍏",
+    "description": "Fixed issues on iOS",
+    "shortcode": ":green_apple:",
+    "name": "green_apple"
+  },
+  {
+    "emoji": "🤖",
+    "description": "Fixed issues on Android",
+    "shortcode": ":robot_face:",
+    "name": "robot_face"
+  },
+  {
+    "emoji": "🔈",
+    "description": "Added, updated, or integrated audio",
+    "shortcode": ":speaker:",
+    "name": "speaker"
   }
 ]
