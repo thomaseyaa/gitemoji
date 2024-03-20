@@ -10,6 +10,7 @@
     "demini": "prettier --write src/assets/css/app.min.css"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "core-js": "^3.8.3",
     "minify": "^10.2.0",
     "vue": "^3.2.13",
