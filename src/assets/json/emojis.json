@@ -145,7 +145,7 @@
   },
   {
     "emoji": "✏️",
-    "description": "Fixed typos",
+    "description": "Text modification",
     "shortcode": ":pencil2:",
     "name": "pencil2"
   },
@@ -316,5 +316,65 @@
     "description": "Added, updated, or integrated audio",
     "shortcode": ":speaker:",
     "name": "speaker"
+  },
+  {
+    "emoji": "✉️",
+    "description": "Addition or modification of emails",
+    "shortcode": ":email:",
+    "name": "email"
+  },
+  {
+    "emoji": "📐",
+    "description": "Fixing a style problem",
+    "shortcode": ":triangular_ruler:",
+    "name": "triangular_ruler"
+  },
+  {
+    "emoji": "🧪",
+    "description": "Tests / Experimentations",
+    "shortcode": ":test_tube:",
+    "name": "test_tube"
+  },
+  {
+    "emoji": "🖌️",
+    "description": "Fixing typos",
+    "shortcode": ":paintbrush:",
+    "name": "paintbrush"
+  },
+  {
+    "emoji": "🛜",
+    "description": "Work on network-related features",
+    "shortcode": ":compression:",
+    "name": "compression"
+  },
+  {
+    "emoji": "🔔",
+    "description": "Handling notifications",
+    "shortcode": ":bell:",
+    "name": "bell"
+  },
+  {
+    "emoji": "🤝",
+    "description": "Resolution of merge conflicts",
+    "shortcode": ":handshake:",
+    "name": "handshake"
+  },
+  {
+    "emoji": "🔒",
+    "description": "System security update",
+    "shortcode": ":lock:",
+    "name": "lock"
+  },
+  {
+    "emoji": "💰",
+    "description": "Addition of sponsorships or money-related infrastructure",
+    "shortcode": ":moneybag:",
+    "name": "moneybag"
+  },
+  {
+    "emoji": "💡",
+    "description": "Adding or fixing a user experience aspect",
+    "shortcode": ":bulb:",
+    "name": "bulb"
   }
 ]
