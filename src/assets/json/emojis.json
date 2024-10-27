@@ -366,12 +366,6 @@
     "name": "lock"
   },
   {
-    "emoji": "💰",
-    "description": "Addition of sponsorships or money-related infrastructure",
-    "shortcode": ":moneybag:",
-    "name": "moneybag"
-  },
-  {
     "emoji": "💡",
     "description": "Adding or fixing a user experience aspect",
     "shortcode": ":bulb:",
