@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.2.0",
     "core-js": "^3.8.3",
     "minify": "^10.2.0",
     "vue": "^3.2.13",
