@@ -370,5 +370,27 @@
     "description": "Adding or fixing a user experience aspect",
     "shortcode": ":bulb:",
     "name": "bulb"
-  }
+  },
+  { "emoji": "🐛", "description": "Reported or reproduced a bug", "shortcode": ":bug:", "name": "bug" },
+  { "emoji": "⏪", "description": "Reverted changes", "shortcode": ":rewind:", "name": "rewind" },
+  { "emoji": "🚸", "description": "Improved usability or UX flow", "shortcode": ":children_crossing:", "name": "children_crossing" },
+  { "emoji": "🏷️", "description": "Added or updated types", "shortcode": ":label:", "name": "label" },
+  { "emoji": "🔊", "description": "Added or updated logs", "shortcode": ":loud_sound:", "name": "loud_sound" },
+  { "emoji": "🔇", "description": "Removed logs", "shortcode": ":mute:", "name": "mute" },
+  { "emoji": "🩹", "description": "Quick fix for a non-critical issue", "shortcode": ":adhesive_bandage:", "name": "adhesive_bandage" },
+  { "emoji": "⚗️", "description": "Ran an experiment", "shortcode": ":alembic:", "name": "alembic" },
+  { "emoji": "🧵", "description": "Concurrency or multithreading work", "shortcode": ":thread:", "name": "thread" },
+  { "emoji": "🧑‍💻", "description": "Improved developer experience", "shortcode": ":technologist:", "name": "technologist" },
+  { "emoji": "🗑️", "description": "Deprecated code that needs cleanup", "shortcode": ":wastebasket:", "name": "wastebasket" },
+  { "emoji": "🧹", "description": "Cleaned up code or removed clutter", "shortcode": ":broom:", "name": "broom" },
+  { "emoji": "📈", "description": "Added or updated analytics or tracking", "shortcode": ":chart_increasing:", "name": "chart_increasing" },
+  { "emoji": "🚩", "description": "Added, updated, or removed feature flags", "shortcode": ":triangular_flag_on_post:", "name": "triangular_flag_on_post" },
+  { "emoji": "➕", "description": "Added a dependency", "shortcode": ":heavy_plus_sign:", "name": "heavy_plus_sign" },
+  { "emoji": "➖", "description": "Removed a dependency", "shortcode": ":heavy_minus_sign:", "name": "heavy_minus_sign" },
+  { "emoji": "👽", "description": "Updated code due to external API changes", "shortcode": ":alien:", "name": "alien" },
+  { "emoji": "📸", "description": "Added or updated snapshots", "shortcode": ":camera_flash:", "name": "camera_flash" },
+  { "emoji": "🩺", "description": "Added or updated a healthcheck", "shortcode": ":stethoscope:", "name": "stethoscope" },
+  { "emoji": "👥", "description": "Added or updated contributors", "shortcode": ":busts_in_silhouette:", "name": "busts_in_silhouette" },
+  { "emoji": "🧊", "description": "Froze dependencies or a release", "shortcode": ":ice_cube:", "name": "ice_cube" },
+  { "emoji": "🪝", "description": "Added or updated a webhook or git hook", "shortcode": ":hook:", "name": "hook" }
 ]
