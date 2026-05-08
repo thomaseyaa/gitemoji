@@ -1,5 +1,5 @@
 <template class="background-color">
-  <div class="px-4">
+  <div class="app-shell">
     <router-view />
     <Footer />
     <SpeedInsights />
@@ -8,6 +8,7 @@
 
 <script>
 import "@/assets/css/app.min.css";
+import "@/assets/css/theme.css";
 import Footer from "@/components/Footer.vue";
 import { SpeedInsights } from "@vercel/speed-insights/vue";
 
