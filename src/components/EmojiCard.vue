@@ -1,5 +1,5 @@
 <template>
-  <div class="card py-5 px-4 text-center" @click="copyText(item.shortcode)">
+  <div class="card" @click="copyText(item.shortcode)">
     <Toast v-if="copied" :message="text" />
     <span class="dot"></span>
     <span class="emoji">{{ item.emoji }}</span>
@@ -35,54 +35,64 @@ export default {
       audio.currentTime = 0;
       this.copied = false;
       navigator.clipboard.writeText(item);
+      const usage = JSON.parse(localStorage.getItem("gitemoji-usage") || "{}");
+      usage[this.item.name] = (usage[this.item.name] || 0) + 1;
+      localStorage.setItem("gitemoji-usage", JSON.stringify(usage));
       audio.play();
       this.copied = true;
       setTimeout(() => {
         this.copied = false;
-      }, 100); // set the timeout to 1 seconds (adjust as needed)
+      }, 100);
     },
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card {
-  border-radius: 10px;
-  width: 22.8%;
-  height: 20rem;
-  padding: 10px;
-  background-color: #253656;
+  position: relative;
+  height: 17rem;
+  border-radius: 8px;
+  padding: 30px 22px;
+  background-color: var(--ge-card-bg, #253656);
+  color: var(--ge-text, #ffffff);
+  border: 1px solid var(--ge-border, rgba(255, 255, 255, 0.09));
   cursor: pointer;
-  margin-bottom: 2.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 .dot {
   position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 28px;
-  top: 28px;
-  border-radius: 15px;
-  background: #ffffff;
+  top: 16px;
+  left: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ge-dot, #ffffff);
+}
+.card:hover {
+  background-color: var(--ge-card-bg-hover, #17171a);
+  border-color: var(--ge-border-strong, #3a3a3d);
 }
 .emoji {
-  font-size: 5rem;
+  font-size: 4rem;
+  line-height: 1;
 }
 .shortcode {
-  font-size: 1.547rem;
+  font-family: SFMono-Regular, Menlo, Monaco, monospace;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ge-accent, #3b82f6);
+  word-break: break-word;
 }
 .description {
-  font-size: 1.031rem;
-}
-@media (max-width: 576px) {
-  .card {
-    width: 100%;
-  }
-  .shortcode {
-    font-size: 30px;
-  }
-  .description {
-    font-size: 20px;
-  }
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--ge-text-dim, #a1a1aa);
 }
 </style>
