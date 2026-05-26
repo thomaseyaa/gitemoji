@@ -19,6 +19,28 @@ In case you want integrate emojis in your project, here's an example of a practi
 - `message:` Brief commit message explaining your changes.
 - `shortcode:` String that will add the emoji chosen next to your message.
 
+## For AI agents (MCP)
+
+GitEmoji is also an **MCP server** your coding agent can query. Plug it into
+Claude Code, Codex, or any MCP client, and your agent prefixes each commit with
+the right emoji on its own.
+
+Add it to your `.mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "gitemoji": {
+      "command": "npx",
+      "args": ["-y", "gitemoji-mcp"]
+    }
+  }
+}
+```
+
+Then just ask your agent to commit as usual — it looks up the change and picks
+the matching emoji.
+
 ## Contributing to GitEmoji
 
 To add a feature or a new emoji to the list create an issue and send a pull request.
