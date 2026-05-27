@@ -1,4 +1,4 @@
-/* ---- GitEmoji theme layer — follows system preference (no toggle) ---- */
+/* ---- GitEmoji theme layer — dark by default (no toggle) ---- */
 :root {
   --ge-page-bg: #1c2942;
   --ge-card-bg: #253656;
@@ -11,19 +11,46 @@
   --ge-input-bg: #253656;
   --ge-dot: #ffffff;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --ge-page-bg: #ffffff;
-    --ge-card-bg: #ffffff;
-    --ge-card-bg-hover: #fafafa;
-    --ge-text: #171717;
-    --ge-text-dim: #6b7280;
-    --ge-accent: #3b82f6;
-    --ge-border: #eaeaea;
-    --ge-border-strong: #d4d4d8;
-    --ge-input-bg: #ffffff;
-    --ge-dot: #cbd5e1;
-  }
+:root[data-theme="light"] {
+  --ge-page-bg: #ffffff;
+  --ge-card-bg: #ffffff;
+  --ge-card-bg-hover: #fafafa;
+  --ge-text: #171717;
+  --ge-text-dim: #6b7280;
+  --ge-accent: #3b82f6;
+  --ge-border: #eaeaea;
+  --ge-border-strong: #d4d4d8;
+  --ge-input-bg: #ffffff;
+  --ge-dot: #cbd5e1;
+}
+
+/* theme toggle — quiet pill on the right of the header */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--ge-card-bg);
+  border: 1px solid var(--ge-border);
+  color: var(--ge-text);
+  cursor: pointer;
+  font-size: 1.05rem;
+  line-height: 1;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.theme-toggle:hover {
+  background: var(--ge-card-bg-hover);
+  border-color: var(--ge-border-strong);
+}
+.theme-toggle:active {
+  transform: scale(0.92);
+}
+.theme-toggle:focus-visible {
+  outline: none;
+  border-color: var(--ge-accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
 html {
@@ -70,11 +97,6 @@ body {
 h1,
 h2 {
   color: var(--ge-text) !important;
-}
-@media (prefers-color-scheme: light) {
-  span {
-    color: var(--ge-text);
-  }
 }
 
 /* search input */

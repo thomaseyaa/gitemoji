@@ -6,5 +6,8 @@ import "vue-toastification/dist/index.css";
 import store from "./store";
 import { inject } from "@vercel/analytics";
 
+document.documentElement.dataset.theme =
+  localStorage.getItem("ge-theme") || "dark";
+
 createApp(App).use(store).use(Toast).use(router).mount("#app");
 inject();
